@@ -1,0 +1,77 @@
+{
+  "nodes": {
+    "flake-utils": {
+      "locked": {
+        "lastModified": 1656928814,
+        "narHash": "sha256-RIFfgBuKz6Hp89yRr7+NR5tzIAbn52h8vT6vXkYjZoM=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "7e2a3b3dfd9af950a856d66b0a7d01e3c18aa249",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "libopencm3-miniblink_src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1644236439,
+        "narHash": "sha256-jjfoUgcNcoLaqEvEARs2MOosFRK/S30++b1xGpMU8qg=",
+        "owner": "libopencm3",
+        "repo": "libopencm3-miniblink",
+        "rev": "de66c8c91e0731f03374f682aecc8b06fe2f9af6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "libopencm3",
+        "repo": "libopencm3-miniblink",
+        "type": "github"
+      }
+    },
+    "libopencm3_src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1657040111,
+        "narHash": "sha256-knSbsg2mB8k/luBYvYIxB6lDYrvgEt2vUjrsO/JyOcA=",
+        "owner": "libopencm3",
+        "repo": "libopencm3",
+        "rev": "44e142d4f97863e669737707a1a22bf40ed49bbc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "libopencm3",
+        "repo": "libopencm3",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1658985539,
+        "narHash": "sha256-aRVZGndeuUct3S3T6vqOO64D9qY1F7qNTljd0zuwzak=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "174e938d593817f2eb5ae363684dea7c412eb96a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-22.05",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flake-utils": "flake-utils",
+        "libopencm3-miniblink_src": "libopencm3-miniblink_src",
+        "libopencm3_src": "libopencm3_src",
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
