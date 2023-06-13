@@ -1,6 +1,6 @@
 {
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-22.05";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.05";
     flake-utils.url = "github:numtide/flake-utils";
 
     libopencm3_src.url = "github:libopencm3/libopencm3";
@@ -15,7 +15,7 @@
       let
         pkgs = nixpkgs.legacyPackages.${system};
       in rec {
-        packages = flake-utils.lib.flattenTree rec {
+        packages = rec {
           libopencm3 = pkgs.stdenv.mkDerivation rec {
             pname = "libopencm3";
             version = "1.0.0-git";
